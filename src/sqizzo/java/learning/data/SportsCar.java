@@ -27,6 +27,10 @@ public class SportsCar implements Car {
         this.carName = carName;
     }
 
+    public static void turn() {
+        System.out.println("Turned the car out");
+    }
+
 
     @Override
     public boolean isPowerful() {
