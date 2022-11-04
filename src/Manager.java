@@ -1,5 +1,15 @@
-class Manager {
-    String name;
+class Manager extends Employee {
+    String company;
+
+    public Manager(String name) {
+        super(name);
+    }
+
+    public Manager(String name, String company){
+        super(name);
+        this.company = company;
+    }
+
     void sayHello(){
         System.out.println("Hello");
     }

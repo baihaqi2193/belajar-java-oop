@@ -1,10 +1,8 @@
 public class ManagerApp {
     public static void main(String[] args) {
-        Manager manager = new Manager();
-        VicePresident vicePresident = new VicePresident();
+        Manager manager = new Manager("Andi");
+        VicePresident vicePresident = new VicePresident("Joko");
 
-        manager.name = "Mark";
-        vicePresident.name = "Ashley";
 
         vicePresident.sayHello();
         manager.sayHello();
