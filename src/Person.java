@@ -10,21 +10,25 @@ class Person {
     public  Person () {
         // this() akan memangggil constructor
         this("Joe", "Earth");
-        System.out.println("Constructor default dipanggil!");
+        System.out.println("Default Constructor dipanggil!");
+        System.out.println("----------");
     }
     public Person(String name) {
         this(name, "Earth");
-        System.out.println("Constructor dipanggil!");
+        System.out.println("Partial Constructor dipanggil!");
+        System.out.println("----------");
     }
 
     public Person(String name, String paramAddress ) {
         this.name = name;
         address = paramAddress;
-        System.out.println("Constructor dipanggil!");
+        System.out.println("Full Constructor dipanggil!");
+
     }
 
     // Fields
     String name;
+
     String address;
     final String speciesName = "Human";
 
