@@ -13,5 +13,6 @@ public class Application {
 
 //        System.out.println(product.name);
 //        Error karena protected
+        System.out.println(Computer.PROCESSORS);
     }
 }

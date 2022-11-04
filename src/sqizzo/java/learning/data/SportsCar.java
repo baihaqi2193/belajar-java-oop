@@ -4,6 +4,8 @@ public class SportsCar implements Car {
     private String carName;
     private String engine;
 
+    private static boolean beingDriven = false;
+
     @Override
     public String toString() {
         return getCarName() + " powered by " + getEngine();
@@ -29,6 +31,7 @@ public class SportsCar implements Car {
 
     public static void turn() {
         System.out.println("Turned the car out");
+
     }
 
 
@@ -41,6 +44,7 @@ public class SportsCar implements Car {
     @Override
     public void drive() {
         System.out.println("You are driving Sport Car: " + carName);
+        SportsCar.beingDriven = true;
     }
 
     public String getCarName() {
